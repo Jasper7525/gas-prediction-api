@@ -28,7 +28,7 @@ jobs:
           from huggingface_hub import HfApi
           import os
           HfApi().upload_folder(
-              folder_path='.',
+              folder_path='gas-prediction-api',
               repo_id='jasps/gas-app-ai',
               repo_type='space',
               token=os.environ.get('HF_TOKEN'),
